@@ -1,0 +1,102 @@
+{
+    "dsl_version": 2,
+    "initiator": {
+        "role": "guest",
+        "party_id": 10000
+    },
+    "role": {
+        "host": [
+            9999
+        ],
+        "guest": [
+            10000
+        ]
+    },
+    "component_parameters": {
+        "common": {
+            "data_transform_0": {
+                "output_format": "dense"
+            },
+            "hetero_secure_boost_0": {
+                "task_type": "classification",
+                "objective_param": {
+                    "objective": "cross_entropy"
+                },
+                "num_trees": 30,
+                "tree_param": {
+                    "max_depth": 3
+                }
+            },
+            "positive_unlabeled_0": {
+                "strategy": "proportion",
+                "threshold": 0.5
+            },
+            "hetero_secure_boost_1": {
+                "task_type": "classification",
+                "objective_param": {
+                    "objective": "cross_entropy"
+                },
+                "num_trees": 30,
+                "tree_param": {
+                    "max_depth": 3
+                }
+            },
+            "positive_unlabeled_1": {
+                "strategy": "proportion",
+                "threshold": 0.5
+            },
+            "hetero_secure_boost_2": {
+                "task_type": "classification",
+                "objective_param": {
+                    "objective": "cross_entropy"
+                },
+                "num_trees": 30,
+                "tree_param": {
+                    "max_depth": 3
+                }
+            },
+            "positive_unlabeled_2": {
+                "strategy": "proportion",
+                "threshold": 0.5
+            },
+            "hetero_secure_boost_3": {
+                "task_type": "classification",
+                "objective_param": {
+                    "objective": "cross_entropy"
+                },
+                "num_trees": 30,
+                "tree_param": {
+                    "max_depth": 3
+                }
+            }
+        },
+        "role": {
+            "host": {
+                "0": {
+                    "reader_0": {
+                        "table": {
+                            "name": "h",
+                            "namespace": "experiment"
+                        }
+                    },
+                    "data_transform_0": {
+                        "with_label": false
+                    }
+                }
+            },
+            "guest": {
+                "0": {
+                    "reader_0": {
+                        "table": {
+                            "name": "g",
+                            "namespace": "experiment"
+                        }
+                    },
+                    "data_transform_0": {
+                        "with_label": true
+                    }
+                }
+            }
+        }
+    }
+}
