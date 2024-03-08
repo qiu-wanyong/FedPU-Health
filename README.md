@@ -1,5 +1,5 @@
 # FedPU-Health
-The Code of Abnormal Heart Sound Detection from Multi-federated Care Institutions with Only Positive and Unlabelled Data
+The Code of Abnormal Heart Sound Detection from Multi-federated Care Institutions with Only Positive and Unlabelled Data.
 
 Article Title: “Federated Abnormal Heart Sound Detection with Weak to No Labels”
 
@@ -9,21 +9,21 @@ Cardiovascular diseases are a prominent cause of mortality, emphasising the need
 #### Index Terms— Federated learning, Heart sound, positive-unlabelled, semi-supervised, Privacy protection
 
 ## Data
-Preparation and Analysis of the Signals for [PhysioNet/CinC Challenge Dataset:](https://physionet.org/content/challenge-2016/1.0.0/) Common acoustic signal features are extracted through the openSMILE toolkit and are used for FL models.
+Preparation and Analysis of the Signals for [PhysioNet/CinC Challenge Dataset.](https://physionet.org/content/challenge-2016/1.0.0/) Common acoustic signal features are extracted through the openSMILE toolkit and are used for FL models.
 
 <div align="center">
-<img src="/Fig1_data_pre.png" width="400" height="400">
+<img src="/Fig1_data_pre.png" width="600" height="300">
 </div>
 <div align="center">Fig.1 Illustration of pre-processing for heart sound recordings.</div>
 
 ## Files
-``Configuration file in FATE" : Related configuration files in FATE.
+``Configuration file in FATE:`` Related configuration files in FATE.
 
-``Feature_analysis" : We applied six distinct feature importance analysis methods—'gain', 'total_gain', 'cover', 'total_cover', 'weight', and 'SHAP'—to assess their respective contributions to the model.
+``Feature_analysis:`` We applied six distinct feature importance analysis methods—`gain`, `total_gain`, `cover`, `total_cover`, `weight`, and `SHAP`—to assess their respective contributions to the model.
 
-``Merge.py, xgFeature.py" : We set up a set of baseline models based on data-centralised learning.
+``Merge.py, xgFeature.py:`` We set up a set of baseline models based on data-centralised learning.
 
-``Vertically_split.py" : We vertically partition the preprocessed dataset, gearing up for the vertical-SecureBoost model with PU learning.
+``Vertically_split.py:`` We vertically partition the preprocessed dataset, gearing up for the vertical-SecureBoost model with PU learning.
 
 ## Remarks
 
