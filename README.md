@@ -1,5 +1,6 @@
 # FedPU-Health
 The Code of Abnormal Heart Sound Detection from Multi-federated Care Institutions with Only Positive and Unlabelled Data
+
 Article Title: “Federated Abnormal Heart Sound Detection with Weak to No Labels”
 
 ## Abstract
@@ -11,7 +12,7 @@ Cardiovascular diseases are a prominent cause of mortality, emphasising the need
 Preparation and Analysis of the Signals for [PhysioNet/CinC Challenge Dataset:](https://physionet.org/content/challenge-2016/1.0.0/) Common acoustic signal features are extracted through the openSMILE toolkit and are used for FL models.
 
 <div align="center">
-<img src="/results/Fig1_data_pre.png" width="400" height="400">
+<img src="/Fig1_data_pre.png" width="400" height="400">
 </div>
 <div align="center">Fig.1 Illustration of pre-processing for heart sound recordings.</div>
 
